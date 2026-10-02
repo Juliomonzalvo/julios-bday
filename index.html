@@ -99,6 +99,10 @@ body{
 .btn.sec{background:transparent; color:var(--text); border:2px solid var(--pink); box-shadow:0 0 16px rgba(255,43,214,.3)}
 .btn:active{transform:scale(.97)}
 .btn:focus-visible{outline:3px solid var(--lime); outline-offset:3px}
+.mapas-t{margin:0; text-align:center; font-weight:800; font-size:.95rem; color:var(--text)}
+.mapas{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.mapas .btn{display:flex; flex-direction:column; align-items:center; gap:6px; padding:14px 10px}
+.mapas .ico{font-size:1.6rem; line-height:1}
 .cierre{text-align:center; margin-top:40px; font-size:.85rem; color:var(--dim); line-height:1.6}
 .cierre strong{display:block; font-size:1.2rem; color:#fff}
 </style>
@@ -146,7 +150,11 @@ body{
   </section>
 
   <div class="acciones">
-    <a class="btn" href="https://maps.app.goo.gl/RenZ2EoFWfFyWsrt6" target="_blank" rel="noopener">📍 Cómo llegar</a>
+    <p class="mapas-t">📍 Cómo llegar</p>
+    <div class="mapas">
+      <a class="btn" href="https://maps.apple/p/ejAvgma54U03z4" target="_blank" rel="noopener"><span class="ico">🍎🗺️</span>iPhone</a>
+      <a class="btn" href="https://maps.app.goo.gl/RenZ2EoFWfFyWsrt6" target="_blank" rel="noopener"><span class="ico">🤖🗺️</span>Android</a>
+    </div>
     <a class="btn sec" id="share" href="#" target="_blank" rel="noopener">Pásala por WhatsApp</a>
   </div>
 
